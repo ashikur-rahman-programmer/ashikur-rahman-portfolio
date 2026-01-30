@@ -1,15 +1,14 @@
 /* --- CSS VARIABLES & RESET --- */
 :root {
-  /* Ashik's Palette: Deep Blue / Teal Accent */
-  --clr-primary: #00bcd4; /* Teal/Cyan */
+  --clr-primary: #00bcd4;
   --clr-primary-dark: #0097a7;
 
   /* Dark Theme - Default */
   --clr-text-main: #f0f0f0;
   --clr-text-secondary: #bbb;
-  --clr-bg-main: #121212; /* Deep Dark */
-  --clr-bg-secondary: #1e1e1e; /* Darker section background */
-  --clr-card-bg: rgba(45, 45, 45, 0.7); /* Glass-morphism Base */
+  --clr-bg-main: #121212;
+  --clr-bg-secondary: #1e1e1e;
+  --clr-card-bg: rgba(45, 45, 45, 0.7);
   --clr-border: #444;
   --clr-shadow: rgba(0, 0, 0, 0.7);
 
@@ -60,11 +59,7 @@ html {
   width: 100%;
   margin: 0 auto;
 }
-/* .container {
-  max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
-} */
+
 body {
   font-family: var(--ff-primary);
   line-height: 1.7;
@@ -88,7 +83,7 @@ img {
   height: auto;
 }
 
-/* --- HEADER / NAVBAR (Glassmorphism Effect) --- */
+/* --- HEADER / NAVBAR --- */
 #header {
   position: fixed;
   top: 0;
@@ -142,32 +137,32 @@ img {
   align-items: center;
 }
 
-/* 🔥 আইকনগুলোর ব্যাকগ্রাউন্ড এবং স্টাইল আপডেট করা হয়েছে */
+/* আইকনগুলোর ব্যাকগ্রাউন্ড এবং স্টাইল আপডেট করা হয়েছে */
 #theme-toggle,
 .github-icon-cta,
 .fa-moon {
   font-size: 2.2rem;
   cursor: pointer;
-  color: var(--clr-primary); /* হোভারে অ্যাকসেন্ট কালার */
+  color: var(--clr-primary);
   margin-left: 1rem;
-  background-color: var(--light-clr-text-main); /* 🔥 ব্যাকগ্রাউন্ড কালার */
-  border-radius: 50%; /* গোলাকার ব্যাকগ্রাউন্ডের জন্য */
-  width: 35px; /* ফিক্সড সাইজ */
-  height: 35px; /* ফিক্সড সাইজ */
-  display: flex; /* আইকনকে কেন্দ্রে আনতে */
-  justify-content: center; /* আইকনকে কেন্দ্রে আনতে */
-  align-items: center; /* আইকনকে কেন্দ্রে আনতে */
+  background-color: var(--light-clr-text-main);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all var(--transition-speed);
-  border: 1px solid var(--clr-border); /* একটি সূক্ষ্ম বর্ডার যোগ করা হয়েছে */
+  border: 1px solid var(--clr-border);
 }
 
 #theme-toggle:hover,
 .fa-moon:hover,
 .github-icon-cta:hover {
-  background-color: var(--clr-bg-secondary); /* হোভারে সামান্য হালকা কালো */
-  transform: scale(1.05); /* হোভারে সামান্য বড় হবে */
-  color: var(--clr-primary); /* হোভারে অ্যাকসেন্ট কালার */
-  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3); /* অ্যাকোয়া শ্যাডো */
+  background-color: var(--clr-bg-secondary);
+  transform: scale(1.05);
+  color: var(--clr-primary);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
 }
 
 #menu-btn {
@@ -291,7 +286,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1.5rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* 🔥 Shadow Reduced */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 .primary-btn {
   background: linear-gradient(
@@ -304,7 +299,7 @@ img {
 }
 .primary-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px var(--clr-primary); /* 🔥 Hover Shadow Reduced */
+  box-shadow: 0 5px 15px var(--clr-primary);
 }
 .secondary-btn {
   background: transparent;
@@ -391,8 +386,7 @@ img {
     background 0.3s;
 }
 .skill-item:hover {
-  transform: translateY(-10px); /* হোভারে কার্ড সামান্য উপরে উঠবে */
-  /* হোভারে নিওন গ্লো এবং হালকা ব্যাকগ্রাউন্ড */
+  transform: translateY(-10px);
   box-shadow:
     0 15px 40px var(--clr-shadow),
     0 0 20px var(--clr-primary);
@@ -458,12 +452,12 @@ img {
 }
 
 .service-card {
-  background: var(--clr-card-bg); /* কার্ডের ব্যাকগ্রাউন্ড */
+  background: var(--clr-card-bg);
   padding: var(--space-md);
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  border-bottom: 5px solid var(--clr-primary); /* নিওন অ্যাকসেন্ট বর্ডার */
+  border-bottom: 5px solid var(--clr-primary);
   transition:
     transform var(--transition-speed),
     box-shadow var(--transition-speed),
@@ -472,7 +466,7 @@ img {
 
 .service-icon {
   font-size: 4.5rem;
-  color: var(--clr-primary); /* নিওন অ্যাকসেন্ট কালার */
+  color: var(--clr-primary);
   margin-bottom: 1.5rem;
 }
 
@@ -488,8 +482,7 @@ img {
 }
 
 .service-card:hover {
-  transform: translateY(-10px); /* হোভারে কার্ড সামান্য উপরে উঠবে */
-  /* হোভারে নিওন গ্লো এবং হালকা ব্যাকগ্রাউন্ড */
+  transform: translateY(-10px);
   box-shadow:
     0 15px 40px var(--clr-shadow),
     0 0 20px var(--clr-primary);
@@ -533,10 +526,10 @@ img {
 .project-card {
   background: var(--clr-card-bg);
   border-radius: 1rem;
-  border-bottom: 5px solid var(--clr-primary); /* সার্ভিস কার্ডের মতো বর্ডার নিশ্চিত করা হলো */
+  border-bottom: 5px solid var(--clr-primary);
   overflow: hidden;
   box-shadow: 0 5px 30px var(--clr-shadow);
-  /* 🔥 হোভার এফেক্টের জন্য ট্রানজিশন নিশ্চিত করা হলো */
+
   transition:
     transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     box-shadow 0.6s,
@@ -555,8 +548,7 @@ img {
   margin-bottom: 1rem;
 }
 .project-card:hover {
-  transform: translateY(-10px); /* কার্ড উপরে উঠবে */
-  /* হোভারে নিওন গ্লো এবং হালকা ব্যাকগ্রাউন্ড */
+  transform: translateY(-10px);
   box-shadow:
     0 15px 40px var(--clr-shadow),
     0 0 20px var(--clr-primary);
@@ -744,13 +736,8 @@ img {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(
-      18,
-      18,
-      18,
-      0.95
-    ); /* 🔥 Deep Dark BG with slight transparency */
-    backdrop-filter: blur(8px); /* 🔥 Blur added for readability */
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(8px);
     border-top: 1px solid var(--clr-border);
     flex-direction: column;
     padding: 1rem 0;
@@ -813,7 +800,7 @@ img {
       18,
       0.95
     ); /* 🔥 Deep Dark BG with slight transparency */
-    backdrop-filter: blur(8px); /* 🔥 Blur added for readability */
+    backdrop-filter: blur(8px);
     border-top: 1px solid var(--clr-border);
     flex-direction: column;
     padding: 1rem 0;
@@ -842,8 +829,6 @@ img {
     justify-content: center;
   }
 }
-
-/* //////////////// */
 
 /* ===============================
    GLOBAL HORIZONTAL SCROLL FIX

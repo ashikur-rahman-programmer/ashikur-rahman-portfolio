@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isDeleting) {
       professionText.textContent = currentProfession.substring(
         0,
-        charIndex - 1
+        charIndex - 1,
       );
       charIndex--;
     } else {
       professionText.textContent = currentProfession.substring(
         0,
-        charIndex + 1
+        charIndex + 1,
       );
       charIndex++;
     }
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", theme);
 
     const icon = themeToggle.querySelector("i");
-    // 🔥 Dark Mode (Default): Moon Icon, Light Mode: Sun Icon
+    // Dark Mode (Default): Moon Icon, Light Mode: Sun Icon
     if (theme === "dark-mode") {
       icon.classList.replace("fa-sun", "fa-moon");
     } else {
